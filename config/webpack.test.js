@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 const srcFolder = 'src';
 const srcFolderPath = path.join(__dirname, '..', srcFolder);
-const tsFolderPath = path.join(__dirname, '..', srcFolder, 'ts');
+const tsFolderPath = path.join(__dirname, '..', srcFolder, 'components');
 const nodeModulesFolderPath = path.join(__dirname, '..', 'node_modules');
 
 // configure the environment object for test mode

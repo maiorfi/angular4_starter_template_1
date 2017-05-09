@@ -12,7 +12,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const srcFolder = 'src';
 const srcFolderPath = path.join(__dirname, '..', srcFolder);
-const tsFolderPath = path.join(__dirname, '..', srcFolder, 'ts');
+const tsFolderPath = path.join(__dirname, '..', srcFolder, 'components');
 
 module.exports = {
 
@@ -69,7 +69,7 @@ module.exports = {
             // transpiles global SASS stylesheets
             {
                 test: /\.scss$/,
-                exclude: [ path.join(__dirname, '..', srcFolder, 'ts') ],
+                exclude: [ path.join(__dirname, '..', srcFolder, 'components') ],
                 // loader order is executed right to left
                 use: [
                     'style-loader',

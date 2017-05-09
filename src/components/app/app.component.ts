@@ -2,8 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "main",
-    template: `
-        <color-tool></color-tool>
-    `,
+    template: require("./app.component.html"),
+    styles: [require("./app.component.scss")],
 })
 export class AppComponent { }
