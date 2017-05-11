@@ -9,7 +9,8 @@ const appRoutes: Routes = [
     { path: "", redirectTo: "feature-one-component-one", pathMatch: "full" },
     { path: "feature-one-component-one", component: FeatureOneComponentOne },
     { path: "feature-one-component-two", component: FeatureOneComponentTwo },
+    { path: "feature-one-components-one-and-two", children: [{ path: "", outlet: "myotheroutlet", component: FeatureOneComponentTwo }, { path: "", component: FeatureOneComponentOne }] },
     { path: "**", component: CrossCuttingRouteNotFoundComponent },
 ];
 
-export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: true });
+export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: true, enableTracing: false });
