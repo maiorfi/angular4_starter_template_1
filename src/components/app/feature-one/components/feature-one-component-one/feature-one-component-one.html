@@ -1,13 +1,15 @@
-<header>
-    <h1>Feature One Component</h1>
-</header>
-<ul>
-    <li *ngFor="let color of colors">{{color.name}}</li>
-</ul>
-<form novalidate>
-     <div class="form-group">
-        <label for="new-color-input">New Color:</label>
-        <input type="text" id="new-color-input" name="newColorInput" [(ngModel)]="newColor">
-    </div>
-    <button type="button" class="btn btn-primary" (click)="addColor()">Add Color</button>
-</form>
+<main>
+    <header>
+        <h1>Feature One Component One</h1>
+    </header>
+    <ul>
+        <li *ngFor="let color of colors">{{color.name}}</li>
+    </ul>
+    <form novalidate>
+        <div class="form-group">
+            <label for="new-color-input">New Color:</label>
+            <input type="text" id="new-color-input" name="newColorInput" [(ngModel)]="newColor">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="addColor()">Add Color</button>
+    </form>
+</main>

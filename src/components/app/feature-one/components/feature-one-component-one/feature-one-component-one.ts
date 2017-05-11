@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import { FeatureOneModelOne } from "../../models/feature-one-model-one";
 
 @Component({
-    selector: "feature-one-component",
+    selector: "feature-one-component-one",
     template: require("./feature-one-component-one.html"),
     styles: [require("./feature-one-component-one.scss")],
 })
